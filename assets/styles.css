@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap');
+
+@font-face {
+    font-family: 'corpa';
+    src: url(./fonts/corpa/Brass\ Fonts\ -\ Corpa\ Gothic\ Pro\ Bold\ Italic.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'graf';
+    src: url(/assets/fonts/spooky_brush/Spooky\ Brush.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'old';
+    src: url(./fonts/badaboom_bb/BADABB__.TTF);
+    font-weight: 700;
+}
+
+
+
+:root {
+    --navbar: #1f262c;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    background-color: #fbeed3;
+}
+
+body h1, h2 {
+    font-family: 'old';
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    background: #1f262c;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.navbar__logo img {
+    width: 130px;
+    height: 70px;
+}
+
+.navbar__input {
+    display: none;
+}
+
+.navbar__list {
+    display: none;
+}
+
+.navbar__list a {
+    color: #fff;
+}
+
+.navbarlist__login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbarlist__login a {
+    color: #fff;
+    background: rgb(242,124,65);
+    background: linear-gradient(90deg, rgba(242,124,65,1) 23%, rgba(237,40,40,1) 100%);
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.navbar__input:checked + .navbar__list {
+    display: block;
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    /* background: rgb(71,65,242);
+    background: linear-gradient(90deg, rgba(71,65,242,1) 27%, rgba(187,34,99,1) 100%); */
+    background: #1f262c;
+    width: 50%;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    max-width: 1980px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* HEROO */
+
+#hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--navbar);
+    padding: 50px;
+    gap: 50px;
+}
+
+#hero h1 {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+}
+
+#hero span {
+    background: rgb(242,124,65);
+    background: linear-gradient(90deg, rgba(242,124,65,1) 23%, rgba(237,40,40,1) 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+}
+
+.hero__img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img__background {
+    position: relative;
+}
+
+.zapatilla { 
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+}
+
+.img__zapatilla {
+    position: static;
+
+}
+
+.hero__text a {
+    background: #1f262c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Section Productos */
+
+#products {
+    background: rgb(255,235,210);
+    background: linear-gradient(90deg, rgba(255,235,210,1) 25%, rgba(234,214,255,1) 100%);
+    padding: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.product__father {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.main__h2 {
+    font-size: 50px;
+    font-weight: 700;
+    background: rgb(33,77,235);
+    background: linear-gradient(90deg, rgba(33,77,235,1) 25%, rgba(230,29,212,1) 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.product__container {
+    padding: 20px;
+    background: #1f262c;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product__top {
+    background: #fffbf3;
+    border-radius: 10px;
+}
+
+.product__container h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.product__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.product__bottom p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.product__bottom a {
+    color: #fff;
+    background: rgb(242,124,65);
+    background: linear-gradient(90deg, rgba(242,124,65,1) 23%, rgba(237,40,40,1) 100%);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.product__container img {
+    width: 100%;
+}
+
+.hero__catalogo a {
+    color: #fff;
+    background: rgb(242,124,65);
+    background: linear-gradient(90deg, rgba(242,124,65,1) 23%, rgba(237,40,40,1) 100%);
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Section New Product */
+
+.new__product {
+    height: 1000px;
+    width: 100%;
+    background-image: url(./images/nike\ jordan\ rojas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.new__product h3 {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: 'corpa';
+    font-size: 80px;
+    text-shadow: -4px -3px 2px red ;
+}
+
+.product__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__text a {
+    position: absolute;
+    color: #fff;
+    background: rgb(242,124,65);
+    background: linear-gradient(90deg, rgba(242,124,65,1) 23%, rgba(237,40,40,1) 100%);
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    bottom: 90px;
+}
+
+/* SECTION BENEFICIOS */
+
+#beneficios {
+    background: rgb(255,235,210);
+    background: linear-gradient(90deg, rgba(255,235,210,1) 25%, rgba(234,214,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px;
+    max-width: 1980px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.beneficios__father {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.beneficios__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    background: #01132b;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.beneficios__cards img {
+    height: 200px;
+    width: 200px;
+}
+
+.beneficios__cards h3 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.beneficios__cards p {
+    color: #9297a2;
+}
+
+/* FOOTER */
+#footer__top {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0 60px 0;
+    background: rgb(255,235,210);
+    background: linear-gradient(90deg, rgba(255,235,210,1) 25%, rgba(234,214,255,1) 100%);
+    border-top: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Footer Formulario */
+
+.footer__formula {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input__contacto {
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    background: #0e0f07;
+    border-color: #0e0f07;
+    padding: 10px;
+}
+.input__mensaje {
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    background: #0e0f07;
+    border-color: #0e0f07;
+}
+
+.footer__formulario a {
+    background: #0e0f07;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Footer contacto */
+
+.footer__contacto {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__contactanos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contacto__img {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+}
+
+.contacto__list {
+    padding: 13px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.contacto__list a {
+    color: #9297a2;
+}
+
+.footer__bottom {
+    background: #1f262c;
+    padding: 20px;
+    font-size: 16px;
+    color: #fff;
+}

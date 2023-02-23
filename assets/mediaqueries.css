@@ -1,0 +1,266 @@
+
+/* TABLET */
+@media (min-width: 992px) {
+
+    /* Ocultamos menu toggle */
+
+    .navbar__container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .navbar__input {
+        display: none;
+    }
+
+    .navbar__label {
+        display: none;
+    }
+
+    .navbar__list {
+        display: block;
+    }
+
+    .navbar__list {
+        display: flex;
+        gap: 30px;
+        font-size: 17px;
+    }
+
+    /* header  + hero*/
+
+    .hero__text h1 {
+        font-size: 80px;
+    }
+    
+    .hero__text p {
+        font-size: 18px;
+    }
+        
+    .hero__text a {
+        background: #1f262c;
+        color: #fff;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    /* Products */
+
+    #products {
+        max-width: 1980px;
+        margin: 0 auto;
+    }
+
+    .main__h2 {
+        font-size: 60px;
+    }
+
+    .product__father {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .hero__catalogo a {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    /* NEW */
+
+    .new__product h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 90px;
+        padding-top: 90px;
+    }
+
+    .product__text a {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    /* BENEFICIOS */
+
+    .beneficios__father {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .beneficios__cards {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* FOOTER */
+
+    #footer__top {
+        max-width: 1980px;
+        margin: 0 auto;
+        padding: 70px 120px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .footer__h2 {
+        font-size: 30px;
+    }
+
+}
+
+/* ESCRITORIO */
+
+@media (min-width: 1440px) {
+
+    /* Navbar */
+
+    .navbar__list a {
+        font-size: 22px;
+    }
+
+    .navbar__container {
+        padding: 40px;
+    }
+
+    /* Hero */
+
+    #hero {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    #hero h1 {
+        font-size: 80px;
+        width: 50%;
+    }
+
+    .hero__img {
+        width: 70%;
+    }
+
+    /* Products */
+
+    #products {
+        max-width: 1980px;
+        margin: 0 auto;
+        padding: 120px 30px 120px 30px ;
+        gap: 100px;
+    }
+
+    .main__h2 {
+        font-size: 70px;
+    }
+
+    .product__container h3 {
+        font-size: 25px;
+    }
+
+    .product__bottom p {
+        font-size: 22px;
+    }
+
+    .product__bottom a {
+        font-size: 20px;
+    }
+
+    .hero__catalogo a {
+        font-size: 25px;
+    }
+
+    /* NEW PRODUCT */
+    
+    .new__product h3 {
+        font-size: 120px;
+    }
+
+    .new__product a {
+        font-size: 25px;
+    }
+
+    /* BENEFICIOS */
+
+    #beneficios {
+        padding: 100px 30px 100px 30px;
+        max-width: 1980px;
+        margin: 0 auto;
+    }
+
+    .beneficios__father {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .beneficios__cards img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .beneficios__cards h3 {
+        font-size: 25px;
+    }
+
+    .beneficios__cards p {
+        font-size: 18px;
+    }
+
+    /* FOOTER */
+
+    #footer__top {
+        max-width: 1980px;
+        margin: 0 auto;
+        padding: 70px 120px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .footer__h2 {
+        font-size: 50px;
+    }
+
+    .input__contacto {
+        width: 400px;
+        height: 50px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .input__mensaje {
+        width: 400px;
+        height: 200px;
+        font-size: 16px;
+        text-align: left;
+        padding-bottom: 150px;
+        padding-left: 9px;
+    }
+
+    .footer__formulario a {
+        width: 400px;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .contacto__img {
+        width: 60px;
+    }
+
+    .contacto__list a {
+        font-size: 24px;
+    }
+
+    .footer__bottom {
+        font-size: 23px;
+    }
+}
