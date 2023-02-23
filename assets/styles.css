@@ -61,7 +61,7 @@ body h1, h2 {
     align-items: center;
     height: 100%;
     width: 100%;
-    padding: 20px;
+    padding: 40px;
 }
 
 .navbar__logo img {
@@ -306,7 +306,7 @@ main {
     font-size: 18px;
     padding: 10px;
     border-radius: 10px;
-    bottom: 90px;
+    bottom: 60px;
 }
 
 /* SECTION BENEFICIOS */
